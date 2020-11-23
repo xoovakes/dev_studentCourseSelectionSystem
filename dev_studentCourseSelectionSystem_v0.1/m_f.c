@@ -9,6 +9,7 @@ void Adminlogin()
 	printf("\n\t请输入管理员账号：");
 	scanf("%s",&name);
 	printf("\t请输入管理密码:");
+//1
 //	scanf("%s",&password);
 	for(j=0;j<=6;j++)
 	{
