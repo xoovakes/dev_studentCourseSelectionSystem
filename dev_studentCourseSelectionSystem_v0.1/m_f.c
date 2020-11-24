@@ -10,7 +10,6 @@ void Adminlogin()
 	scanf("%s",&name);
 	printf("\t«Î ‰»Îπ‹¿Ì√‹¬Î:");
 //	scanf("%s",&password);
-// 1
 	for(j=0;j<=6;j++)
 	{
 		pass[j]=getch();
