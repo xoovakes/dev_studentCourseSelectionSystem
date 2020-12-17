@@ -1,5 +1,5 @@
 #include "function_prototy.h"
-//manager *m_head = NULL;
+manager *m_head = NULL;
 
 //¹ÜÀíÔ±µÇÂ¼
 void AdminLogin(int count)

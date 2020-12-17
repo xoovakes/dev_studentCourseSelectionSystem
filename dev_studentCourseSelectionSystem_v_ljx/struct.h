@@ -14,7 +14,7 @@ typedef struct student //定义学生结构体
     char *next;          //用来建立链表
     // int total_credit;    //已修学分
 } student;
-student *s_head = NULL;
+student *s_head;
 
 typedef struct course //定义课程结构体
 {
@@ -39,4 +39,4 @@ typedef struct manager //定义管理员结构体
     char m_password[10]; //管理员密码
     char *next;          //用来建立链表
 } manager;
-manager *m_head = NULL;
+manager *m_head;
