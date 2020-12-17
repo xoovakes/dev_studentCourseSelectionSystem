@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o manager_function.o student_function.o service_student.o file_access.o menus.o $(RES)
-LINKOBJ  = main.o manager_function.o student_function.o service_student.o file_access.o menus.o $(RES)
+OBJ      = main.o service_manager.o operation_student.o service_student.o file_access.o menus.o operation_manager.o $(RES)
+LINKOBJ  = main.o service_manager.o operation_student.o service_student.o file_access.o menus.o operation_manager.o $(RES)
 LIBS     = -L"G:/Ëã·¨¾ºÈü/À¶ÇÅ±­/Dev-cpp5.4.0¼°API°ïÖúÎÄµµ/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc
 INCS     = -I"G:/Ëã·¨¾ºÈü/À¶ÇÅ±­/Dev-cpp5.4.0¼°API°ïÖúÎÄµµ/Dev-Cpp/MinGW32/include"
 CXXINCS  = -I"G:/Ëã·¨¾ºÈü/À¶ÇÅ±­/Dev-cpp5.4.0¼°API°ïÖúÎÄµµ/Dev-Cpp/MinGW32/include"
@@ -28,11 +28,11 @@ $(BIN): $(OBJ)
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
 
-manager_function.o: manager_function.c
-	$(CC) -c manager_function.c -o manager_function.o $(CFLAGS)
+service_manager.o: service_manager.c
+	$(CC) -c service_manager.c -o service_manager.o $(CFLAGS)
 
-student_function.o: student_function.c
-	$(CC) -c student_function.c -o student_function.o $(CFLAGS)
+operation_student.o: operation_student.c
+	$(CC) -c operation_student.c -o operation_student.o $(CFLAGS)
 
 service_student.o: service_student.c
 	$(CC) -c service_student.c -o service_student.o $(CFLAGS)
@@ -42,3 +42,6 @@ file_access.o: file_access.c
 
 menus.o: menus.c
 	$(CC) -c menus.c -o menus.o $(CFLAGS)
+
+operation_manager.o: operation_manager.c
+	$(CC) -c operation_manager.c -o operation_manager.o $(CFLAGS)
